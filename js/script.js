@@ -15,11 +15,12 @@ if (!(name === "") && ((gender === "male") || (gender === "female"))) {
   // La variabile element contiene l'oggetto element dell'ID specificato
   var element = document.getElementById('name');
   // Usare la proprietà innerHTML per impostare il contenuto di un oggetto(name)
-  document.getElementById('name').innerHTML = name
+  document.getElementById('name').innerHTML = name;
   if (gender === "male") {
     // Usare la proprietà className per  la classe blue-c
       element.className = "blue-c";
-  } else {
+  }
+  else {
     // Usare la proprietà className per  la classe blue-c
       element.className = "pink-c";
   }
