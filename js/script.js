@@ -5,17 +5,18 @@ Sulla pagina html deve apparire “Ciao <nome>”, il colore del nome deve esser
 
 //Variabili
 
-var name = prompt("What's your name?")
+var name = prompt("What's your name?");
 
-var gender = prompt("What's your gender? (Male or Female)")
+var gender = prompt("What's your gender? (Male or Female)");
+var gender = gender.toLowerCase();
 
 // Verificare se il campo name non è vuoto e gender è valido.
-if (!(name === "") && ((gender === "Male") || (gender === "Female"))) {
+if (!(name === "") && ((gender === "male") || (gender === "female"))) {
   // La variabile element contiene l'oggetto element dell'ID specificato
   var element = document.getElementById('name');
   // Usare la proprietà innerHTML per impostare il contenuto di un oggetto(name)
   document.getElementById('name').innerHTML = name
-  if (gender === "Male") {
+  if (gender === "male") {
     // Usare la proprietà className per  la classe blue-c
       element.className = "blue-c";
   } else {
