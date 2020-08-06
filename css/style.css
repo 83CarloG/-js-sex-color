@@ -1,5 +1,15 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0:
+  padding: 0;
+}
+#name {
+  font-size: 32px;
+}
+.blue-c {
+  color: blue;
+}
+
+.pink-c {
+  color: pink;
 }
