@@ -13,16 +13,18 @@ var gender = gender.toLowerCase();
 // Verificare se il campo name non è vuoto e gender è valido.
 if (!(name === "") && ((gender === "male") || (gender === "female"))) {
   // La variabile element contiene l'oggetto element dell'ID specificato
-  var element = document.getElementById('name');
+  var element = document.getElementById('userName');
   // Usare la proprietà innerHTML per impostare il contenuto di un oggetto(name)
-      document.getElementById('name').innerHTML = name;
+  element.innerHTML = name;
   if (gender === "male") {
     // Usare la proprietà className per  la classe blue-c
-      element.className = "blue-c";
+    element.className = element.classList +
+    " blue-c";
   }
   else {
-    // Usare la proprietà className per  la classe blue-c
-      element.className = "pink-c";
+    // Usare la proprietà className per  la classe pink-c
+    element.className = element.classList +
+    " pink-c";
   }
 }
 else {
